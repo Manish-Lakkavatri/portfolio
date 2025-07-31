@@ -21,9 +21,9 @@
     <div class="uk-navbar-right">
 
         <ul class="uk-navbar-nav uk-light">
-            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll>About</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll>Projects</a></li>
-            <li><a class="uk-button-text uk-text-capitalize" href="mailto:manish.lakkavatri783@gmail.com" uk-scroll>Contact</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#about" uk-scroll="offset: 80">About</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#projects" uk-scroll="offset: 80">Projects</a></li>
+            <li><a class="uk-button-text uk-text-capitalize" href="#contact" uk-scroll>Contact</a></li>
 
         </ul>
 
@@ -52,15 +52,11 @@
 
         <ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical">
             <li class="uk-active"><a href="#" uk-scroll>Home</a></li>
-            <li class="uk-active"><a href="#about" uk-scroll>About</a></li>
-            <li class="uk-active"><a href="#projects" uk-scroll>Projects</a></li>
-            <li class="uk-active"><a href="mailto:">Contact</a></li> <!--- change to ur email-->
+            <li class="uk-active"><a href="#about" uk-scroll="offset: 80">About</a></li>
+            <li class="uk-active"><a href="#projects" uk-scroll="offset: 80">Projects</a></li>
+            <li class="uk-active"><a href="#contact" uk-scroll="offset: 80">Contact</a></li> <!--- change to ur email-->
 
         </ul>
-
-
-
-
     </div>
 </div>
 
@@ -68,7 +64,7 @@
 <!-- Home -->
 <section class="uk-margin-small-left uk-margin-small-right uk-margin-xlarge-top uk-margin-xlarge-bottom">
     <h1 class="uk-margin-xlarge-left uk-light uk-text-left uk-margin-xlarge-right">I'm Manish Lakkavatri, a front-end web developer, <br>Computer Science Student.</h1>
-    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll>About Me</a>
+    <a href="#about" class="uk-margin-xlarge-left uk-text-capitalize uk-button uk-button-secondary" uk-scroll="offset: 80">About Me</a>
 
 
 </section>
@@ -101,31 +97,59 @@
 
 <div class="uk-margin-xlarge-left uk-margin-xlarge-right">
     <!-- Change all of this to ur projects -->
+     <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
+        <h4>NoobChain</h4>
+        <p>NoobChain is a basic blockchain prototype built in Java to demonstrate how fundamental concepts like distributed ledgers, mining, and cryptographic validation work behind the scenes. The project features a working wallet system, transaction validation using Elliptic Curve Cryptography (ECC), and a proof-of-work consensus mechanism.</p>
+        <a class="uk-button-text uk-text-decoration-none" href="https://github.com/Manish-Lakkavatri/NoobChain">
+            <span uk-icon="icon: link">
+            </span> Github Repo </a>
+    </div>
     <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
         <h4>Sorting Visualizer</h4>
         <p>Developed a web application that visualizes various sorting algorithms.This tool helps to understand how different sorting algorithms work by visualizing the sorting process step by step.Visualizes popular sorting algorithms: Bubble Sort, Selection Sort, Insertion Sort, Merge Sort, etc.Interactive and user-friendly interface.
-            </p>
+        </p>
         <a class="uk-button-text uk-text-decoration-none" href="https://manish-lakkavatri.github.io/Sorting-Visualizer/">
             <span uk-icon="icon: link">
             </span> Website Link </a>
-        </div>
-        <div class="uk-margin uk-card uk-card-secondary uk-card-body ">
-            <h4>TinDog</h4>
-            <p> Developed a unique web application inspired by Tinder, tailored for connecting dogs and their owners. Utilized responsive design principles to optimize the website for various devices accessibility and user experience across desktops, tablets, and mobile phones.</p>
-            <a class="uk-button-text uk-text-decoration-none" href="https://manish-lakkavatri.github.io/Tindogg/">
-                <span uk-icon="icon: link">
-                </span> Website Link </a>
-            </div></div>
-
-
-
+    </div>
+    
+</div>
     <br>
-
-
 </section>
 <hr class="uk-margin-xlarge-left uk-margin-xlarge-right">
 </div>
 <!-- Projects Section Ends -->
+ <!-- Contact Section -->
+<section id="contact" class="uk-section uk-section-secondary uk-light uk-margin-xlarge-top uk-padding-large">
+    <div class="uk-container">
+        <h3 class="uk-heading-line uk-text-center"><span>Contact Me</span></h3>
+        <div class="uk-flex uk-flex-column uk-flex-center uk-flex-middle uk-text-center">
+
+            <p class="uk-text-lead uk-margin-small-bottom">Want to get in touch?</p>
+            <p class="uk-margin-remove-top">Feel free to reach out for collaboration, project inquiries, or just to connect!</p>
+            
+            <ul class="uk-list uk-list-large uk-margin-medium-top">
+                <li>
+                    <span uk-icon="icon: mail; ratio: 1.2"></span>
+                    <a class="uk-link-text uk-text-lowercase" href="mailto:manish.lakkavatri783@gmail.com">manish.lakkavatri783@gmail.com</a>
+                </li>
+                <li>
+                    <span uk-icon="icon: instagram; ratio: 1.2"></span>
+                    <a class="uk-link-text" href="https://www.instagram.com/maniesh_219/?utm_source=ig_web_button_share_sheet" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <span uk-icon="icon: github; ratio: 1.2"></span>
+                    <a class="uk-link-text" href="https://github.com/Manish-Lakkavatri" target="_blank">GitHub</a>
+                </li>
+                <li>
+                    <span uk-icon="icon: linkedin; ratio: 1.2"></span>
+                    <a class="uk-link-text" href="https://www.linkedin.com/in/manish-lakkavatri-a51437227/" target="_blank">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
     
 </body>
 </html>
